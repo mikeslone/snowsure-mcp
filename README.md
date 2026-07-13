@@ -1,8 +1,8 @@
 # SnowSure MCP Server
 
-**Hosted, remote [Model Context Protocol](https://modelcontextprotocol.io) server for live ski & snow data — no install, no auth, no API key.**
+**Hosted, remote [Model Context Protocol](https://modelcontextprotocol.io) server for live ski & snow data — no install, keyless read access.**
 
-SnowSure gives AI assistants and agents grounded, verified snow intelligence: live conditions, 14‑day multi‑model forecasts, powder rankings, resort guides, webcams, ski‑pass intelligence, avalanche/road safety, and a natural‑language Answer Engine across **500+ ski resorts worldwide**. Every answer is grounded in SnowSure's data (seven weather models + verified resort‑reported ground truth) — never open web search.
+SnowSure gives AI assistants and agents grounded, verified snow intelligence: live conditions, 14‑day multi‑model forecasts, powder rankings, resort guides, webcams, ski‑pass intelligence, avalanche/road safety, and a natural‑language Answer Engine across **480+ ski resorts worldwide**. Every answer is grounded in SnowSure's data (seven weather models + verified resort‑reported ground truth) — never open web search.
 
 - **Endpoint:** `https://www.snowsure.ai/mcp`
 - **Transport:** Streamable HTTP (MCP spec `2025-03-26`)

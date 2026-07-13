@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "io.github.mikeslone/snowsure-mcp",
-  "description": "Live ski & snow data for AI agents: 14-day multi-model forecasts, powder rankings, resort guides, webcams, ski-pass intelligence, avalanche/road safety, and grounded Q&A across 500+ resorts. Hosted, streamable HTTP, no install or auth.",
+  "description": "Live ski & snow data for AI agents: 14-day multi-model forecasts, powder rankings, resort guides, webcams, ski-pass intelligence, avalanche/road safety, and grounded Q&A across 480+ resorts. Hosted, streamable HTTP — no install, keyless read access.",
   "version": "1.0.0",
   "websiteUrl": "https://www.snowsure.ai",
   "repository": {
