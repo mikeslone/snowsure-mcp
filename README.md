@@ -1,6 +1,7 @@
 # SnowSure MCP Server
 
 [![Glama MCP server](https://glama.ai/mcp/servers/@mikeslone/snowsure-mcp/badge)](https://glama.ai/mcp/servers/@mikeslone/snowsure-mcp)
+[![ora agent readiness score](https://ora.ai/api/badge/snowsure.ai)](https://ora.ai/scan/snowsure.ai)
 
 **Hosted, remote [Model Context Protocol](https://modelcontextprotocol.io) server for live ski & snow data — no install, keyless read access.**
 
