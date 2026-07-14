@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "snowsure": {
+      "source": "mikeslone/snowsure-mcp",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/snowsure/SKILL.md",
+      "computedHash": "5adf97b24310d42732f9d7690509d205dc7ed32c4f865cfdef7ef066b8ed96ef"
+    }
+  }
+}
