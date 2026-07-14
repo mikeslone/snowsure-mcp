@@ -83,6 +83,44 @@ Install from the [Smithery](https://smithery.ai) directory — the server needs 
 - `get_my_snow_report` — personalized report for your saved resorts
 - `book_lodging` — lodging near a resort with a booking link (never auto‑books)
 
+## Python SDK & CLI
+
+```bash
+pip install snowsure
+```
+
+```python
+from snowsure import SnowSureClient
+
+client = SnowSureClient()
+client.get_snow_report(region="europe")["resorts"]   # global rankings
+client.get_resort("matterhorn-ski-paradise")          # one resort in full
+client.ask("where is the best powder right now?")     # grounded Q&A
+```
+
+The package also installs a `snowsure` CLI:
+
+```bash
+snowsure report --sort recent --region europe
+snowsure resort matterhorn-ski-paradise
+snowsure ask "how much snow fell at Niseko this week?"
+```
+
+Source: [`python-sdk/`](python-sdk/). Thin typed wrappers over the public REST API (`GET /api/v1/resorts`, `GET /api/v1/resorts/{slug}`, `GET /api/v1/snow-report`, `POST /api/v1/ask`) — no API key required.
+
+## Agent configs & skills
+
+This repo ships ready-made agent configuration so coding agents and assistants know how to use SnowSure:
+
+- **Agent skill (Claude Code, Cursor, Codex, and other skills-compatible agents):** [`.claude/skills/snowsure/SKILL.md`](.claude/skills/snowsure/SKILL.md) — an [agent skill](https://skills.sh) covering the MCP server, REST API, resort-slug conventions, and answer guidelines. Install with:
+
+  ```bash
+  npx skills add mikeslone/snowsure-mcp
+  ```
+
+- **Cursor rules:** [`.cursor/rules/snowsure.mdc`](.cursor/rules/snowsure.mdc) — copy into your project's `.cursor/rules/`.
+- **Repo agent guidance:** [`CLAUDE.md`](CLAUDE.md).
+
 ## Discovery documents
 
 - Server card: https://www.snowsure.ai/.well-known/mcp/server-card.json

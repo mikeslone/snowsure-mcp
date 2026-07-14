@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "snowsure"
+version = "0.1.0"
+description = "Python SDK and CLI for SnowSure - live ski & snow data: conditions, multi-model forecasts, powder rankings, and a grounded snow Answer Engine across 500+ resorts."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "SnowSure", email = "me@mikeslone.com" }]
+keywords = ["ski", "snow", "snowboard", "weather", "forecast", "powder", "resorts", "snowsure", "mcp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://www.snowsure.ai"
+Documentation = "https://www.snowsure.ai/llms.txt"
+"API Reference" = "https://www.snowsure.ai/openapi.json"
+Repository = "https://github.com/mikeslone/snowsure-mcp"
+Issues = "https://github.com/mikeslone/snowsure-mcp/issues"
+
+[project.scripts]
+snowsure = "snowsure.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/snowsure"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
